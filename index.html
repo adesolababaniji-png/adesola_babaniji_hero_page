@@ -8,12 +8,13 @@
 </head>
 <body>
     <div class="nav_bar">
-        <h2 class="brand_name"">DaBOG's Codes</h2>
+        <h2 class="brand_name">DaBOG's Codes</h2>
         <ul>
             <a href="about_me.html"><li>About Me</li></a>
-            <a href="projects/projects.html"><li>Project</li></a>
             <a href="my_cv/my_cv.html"><li>Resume</li></a>
-            <a href="contact.html"><li>Contact</li></a>
+            <a href="projects/projects.html"><li>Project</li></a>
+            <a href="portfolio/portfolio.html"><li>Portfolio</li></a>
+            <a href="services.html"><li>Services</li></a>  
         </ul>
     </div>
     <div class="cover">
@@ -35,18 +36,26 @@
             </div>
         </div>
         <div class="button">
-            <button type="button" onclick="contact()">Services</button>
-            <button type="button" onclick="portfolio()">Portfolio</button>
+            <span>...Contact me at...</span><button type="button" onclick="contact()">Contact</button>
+            <!-- <button type="button" onclick="portfolio()">Portfolio</button> -->
         </div>
     </div> 
 </body>
 <script>
     function contact() {
-        window.location.href = "services.html";
+        let contactBtn = document.querySelector("button");
+
+        if (contactBtn.innerHTML === "Contact") {
+            contactBtn.innerHTML = "0816 792 9789";
+        } else {
+            contactBtn.innerHTML = "Contact";
+        }
     }
 
+    /*
     function portfolio() {
         window.location.href = "portfolio/portfolio.html";
     }
+    */
 </script>
 </html>

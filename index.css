@@ -14,7 +14,7 @@ body {
 
 .nav_bar {
     display: flex;
-    gap: 330px;
+    gap: 280px;
     align-items: center;
     margin: 20px 20px;
     color: purple;
@@ -57,8 +57,15 @@ h1, h2 {
 }
 
 button {
+    font-size: 15px;
     padding: 5px 10px;
     margin: 0px 10px;
+}
+
+span {
+    color: purple;
+    font-style: italic;
+    font-weight: bold;
 }
 
 @media (max-width:512px) {
