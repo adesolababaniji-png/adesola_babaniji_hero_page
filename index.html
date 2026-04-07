@@ -38,6 +38,7 @@
         <div class="button">
             <span>...Contact me at...</span><button type="button" onclick="contact()">Contact</button>
             <!-- <button type="button" onclick="portfolio()">Portfolio</button> -->
+            <p><a onclick="codeAcademy()" id="code-academy">...Visit our Code Academy...</a></p>
         </div>
     </div> 
 </body>
@@ -49,6 +50,16 @@
             contactBtn.innerHTML = "0816 792 9789";
         } else {
             contactBtn.innerHTML = "Contact";
+        }
+    }
+
+    function codeAcademy() {
+        let codeAcademy = document.getElementById("code-academy");
+
+        if (codeAcademy.innerHTML === "...Visit our Code Academy...") {
+            codeAcademy.innerHTML = "...Code Academy is under development...";
+        } else {
+            codeAcademy.innerHTML = "...Visit our Code Academy...";
         }
     }
 
