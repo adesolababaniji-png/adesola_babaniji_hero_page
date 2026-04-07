@@ -70,13 +70,17 @@ span {
 }
 
 @media (max-width:512px) {
+    body {
+        text-align: center;
+    }
     .nav_bar {
         display: flex;
         flex-direction: column;
         gap: 5px;
         background-color: purple;
         color: rgb(230, 223, 223);
-        margin: 2px 30px;
+        margin: 0% 10px;
+        margin-bottom: 2px;
         padding: 5px 0px;
     }
 
@@ -106,7 +110,7 @@ span {
 
     .cover {
         background-color: purple;
-        margin: 0px 30px;
+        margin: 0px 10px;
         padding: 30px 0px;
     }
 
@@ -144,5 +148,9 @@ span {
     .button {
         text-align: center;
         margin: 30px 0px;
+    }
+
+    span {
+        color: white;
     }
 }
