@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projects.css">
+    <title>Projects</title>
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+      fetch("header.html")
+        .then(res => res.text())
+        .then(data => {
+          document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    <div class="container">
+      <h1>Projects</h1>
+      <h2 id="frontend-el">Frontend Projets (HTML, CSS, Vanilla JS)</h2>
+      <ul>
+        <li>
+          <a href="">Picutre Slide:</a> First designed in 2025. Was mildly updated April 16, 2026. <br>
+          It has next and prev button to navigate forward and backward also uses the keyboard arrow key for navigation. 
+          Does not loop at end and start. Double clicking the picture makes it fullscreen. <br><br>
+        </li>
+        <li>
+          <a href="">Loop Picture Slide:</a> Similar to the picture slide except that the next and prev button loops the picture to 
+          the first and last pictures. <br>
+          The aim is to enable users update pictures. Currently the photo's are pre-installed and only updatable by me the developer. <br><br>
+        </li>
+        <li>
+          <a href="">Auto Loop Picture Slide:</a> First created in 2025 and mildly updated April 16, 2026. <br>
+          Loops continuosly every second. The aim is enable user to update and adjust timer. Currently, the app's
+          pictures and timer are preset by me the developer. <br><br>
+        </li>
+        <li>
+          <a href="">Photo Album:</a> First designed in 2025, The JS codes were improved April 16, 2026. <br>
+          The arrow buttons on both sides navigates the pictures by 5 steps. Clicking the any of the picture 
+          will navigate it by one step. Double clicking a picture enables fullscreen.<br>
+          The aim is to enable users to upload and delete their photos. Currently the photo's are pre-installed 
+          and only updatable by me the developer. <br><br>
+        </li>
+        <li>
+          <a href="">Background Picture Slide:</a> First designed in 2025 and mildly updated April 16, 2026. <br>
+          The background is automated like the auto picture slide. The aim is to enable users update pictures and
+          set timer. The timer and image is set to transition every second by me the developer. <br><br>
+        </li>
+        <li>
+          <a href="">The Blackjack Game:</a> This project was a teaching aid from a javascript tutorial on youtube hosted 
+          by Per Harald Borgan. I stambled on the tutorial in March/April 2026, got intrigued and followed through. This
+          game is my version of the tutorial. <br><br>
+        </li>
+        <li>
+          <a href="">The Roll Dice Game:</a> The roll dice game was an idea that popped up while I was undergoing 
+          Per Harald Borgan's JavaScript tutorials on youtube in March/April 2026. <br><br>
+        </li>
+        <li>
+          <a href="">Leads Tracker:</a> This is my version of the concluding app from Per Harald Borgen javaScript Tutorials. 
+          It is a real world app that can be used by sales executives to track leads for for sales. It uses localStorage to store
+          url links for sales leads. <br> <br>
+        </li>
+        <h2>Frontend Projects (Bootstrap CSS)</h2>
+        <li>
+          <a href=""></a>
+        </li>
+        <h2>Frontend Projects (Tailwind CSS)</h2>
+        <li>
+          <a href=""></a>
+        </li>
+        <h2>Frontend Projects (React JS)</h2>
+        <li>
+          <a href=""></a>
+        </li>
+        <h2>Frontend Projects (React Native)</h2>
+        <li>
+          <a href=""></a>
+        </li>
+        <h2>Frontend Projects (Vue)</h2>
+        <li>
+          <a href=""></a>
+        </li>
+        <h2>Backend Projects (PHP)</h2>
+        <li>
+          <a href=""></a>
+        </li>
+        <h2>Backend Projects (Node JS)</h2>
+        <li>
+          <a href=""></a>
+        </li>
+        <h2>Backend Projects (Python)</h2>
+        <li>
+          <a href=""></a>
+        </li>
+        <h2>Database Projects (MySQL)</h2>
+        <li>
+          <a href=""></a>
+        </li>
+        <h2>Database Projects (PostgressSQL)</h2>
+        <li>
+          <a href=""></a>
+        </li>
+        <h2>Database Projects (MongoDB)</h2>
+        <li>
+          <a href=""></a>
+        </li>
+      </ul>    
+    </div>  
+</body>
+<script>
+  const links = document.querySelectorAll("a");
+  const lists = document.querySelectorAll("li");
+  const frontEndH1 = document.getElementById("frontend-el");
+
+  for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", () => {
+       links[i].innerHTML = "Under development";
+    })    
+  }
+</script>
+</html>

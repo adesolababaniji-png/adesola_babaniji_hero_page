@@ -14,7 +14,7 @@ body {
 
 .nav_bar {
     display: flex;
-    gap: 280px;
+    gap: 300px;
     align-items: center;
     margin: 20px 20px;
     color: purple;
@@ -61,12 +61,28 @@ button {
     font-size: 15px;
     padding: 5px 10px;
     margin: 0px 10px;
+    cursor: pointer;
 }
 
 span {
     color: purple;
     font-style: italic;
     font-weight: bold;
+}
+
+.contacts {
+    border: 2px solid white;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    width: 350px;
+    margin: auto;
+    position: relative;
+    bottom: 180px;
+    left: 330px;
+    display: none;
 }
 
 @media (max-width:512px) {
@@ -79,7 +95,7 @@ span {
         gap: 5px;
         background-color: purple;
         color: rgb(230, 223, 223);
-        margin: 0% 10px;
+        margin: 0px 10px;
         margin-bottom: 2px;
         padding: 5px 0px;
     }
@@ -152,5 +168,10 @@ span {
 
     span {
         color: white;
+    }
+
+    .contacts {
+        left: 0px;
+        bottom: 220px;
     }
 }

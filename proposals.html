@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proposals.css">
+    <title>Portfolio</title>
+</head>
+<body>
+  <div id="header"></div>
+
+  <script>
+    fetch("header.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
+  <div class="proposals">
+    <h1><a href="proposal_to_institutions.html">Propoal to Institutions</a></h1>
+    <h1><a href="proposal_to_parents.html">Proposal to Parents</a></h1>
+    <h1><a href="proposal_for_funds.html">Appeal for Funds</a></h1>
+  </div>  
+</body>
+</html>

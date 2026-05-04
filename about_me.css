@@ -9,8 +9,14 @@ body {
     text-align: justify;
 }
 
+#header {
+    position: sticky;
+    top: 0px;
+}
+
 .about_me {
     background-color: purple;
+    border-radius: 5px;
     color: white;
     margin: 0px 250px;
     padding: 20px;
@@ -35,7 +41,6 @@ a {
     text-align: center;
     margin: 0px 10px;
     text-decoration: none;
-    border-bottom: 3px solid blueviolet;
 }
 
 a:hover {
@@ -52,6 +57,9 @@ a:hover {
         text-align: left;
     }
     .about_me {
-        margin: 0px 30px;
+        margin: 0px 10px;
+    }
+    li {
+        margin-left: 20px;
     }
 }

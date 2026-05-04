@@ -1,0 +1,49 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.brand_name {
+    color: purple;
+    display: none;
+}
+
+.nav_bar {
+    background-color: rgb(230, 223, 223);
+    display: flex;
+    gap: 300px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 5px;
+    color: purple;
+}
+
+.li  li{
+    color: purple;
+    display: inline-flex;
+    margin: 5px 0px;
+}
+
+a {
+    text-align: center;
+    margin: 0px 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    border-bottom: 2px solid purple;
+}
+
+@media (max-width:512px) {
+    .nav_bar {
+        text-align: center;
+    }
+    a {
+        margin: 0px 2px;
+    }
+}

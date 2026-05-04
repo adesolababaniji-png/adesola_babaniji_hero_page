@@ -1,0 +1,51 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(230, 223, 223);
+    color: purple;
+}
+
+#header {
+    position: sticky;
+    top: 0px;
+}
+
+.proposals {
+    background-color: rgb(236, 161, 236);
+    border-radius: 5px;
+    padding: 2px 25px;
+    margin: 0px 200px;
+    margin-top: 120px;
+}
+
+.proposals h1 {
+    background-color: purple;
+    border-radius: 5px;
+    margin: 25px 100px;
+    padding: 5px 20px;
+}
+
+.proposals a {
+    color: white;
+}
+
+.proposals a:hover {
+    border-bottom: 2px solid white;
+}
+
+@media (max-width: 512px) {
+    .proposals {
+        padding: 2px 5px;
+        margin: 0px 5px;
+        margin-top: 250px;
+    }
+    .proposals h1 {
+        margin: 15px 2px;
+    }
+}
+
+

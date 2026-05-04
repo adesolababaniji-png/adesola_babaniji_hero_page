@@ -7,8 +7,17 @@
     <title>About Me</title>
 </head>
 <body>
+    <div id="header"></div>
+    <script>
+    fetch("header.html")
+        .then(res => res.text())
+        .then(data => {
+        document.getElementById("header").innerHTML = data;
+        });
+    </script>
+    
     <div class="about_me">
-    <h1>About Me.</h1>
+        <h1>About Me.</h1>
         <h2>Bio.</h2>
         <p>
             Hi, I’m Adesola Babaniji, a front-end developer based in Lagos. I specialize in creating responsive
